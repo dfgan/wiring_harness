@@ -1,0 +1,43 @@
+Traceback (most recent call last):
+  File "/home/shuzhilian/mmdet_v_1/tools/train.py", line 108, in <module>
+    main()
+  File "/home/shuzhilian/mmdet_v_1/tools/train.py", line 52, in main
+Traceback (most recent call last):
+  File "/home/shuzhilian/mmdet_v_1/tools/train.py", line 108, in <module>
+    cfg = Config.fromfile(args.config)
+  File "/home/shuzhilian/.conda/envs/mmdet_v_1/lib/python3.7/site-packages/mmcv/utils/config.py", line 78, in fromfile
+    main()
+  File "/home/shuzhilian/mmdet_v_1/tools/train.py", line 52, in main
+    cfg = Config.fromfile(args.config)
+  File "/home/shuzhilian/.conda/envs/mmdet_v_1/lib/python3.7/site-packages/mmcv/utils/config.py", line 78, in fromfile
+    check_file_exist(filename)
+  File "/home/shuzhilian/.conda/envs/mmdet_v_1/lib/python3.7/site-packages/mmcv/utils/path.py", line 32, in check_file_exist
+    check_file_exist(filename)
+  File "/home/shuzhilian/.conda/envs/mmdet_v_1/lib/python3.7/site-packages/mmcv/utils/path.py", line 32, in check_file_exist
+    raise FileNotFoundError(msg_tmpl.format(filename))
+FileNotFoundError: file "/data/sdv1/datasets/xs_bbox/bbox_train/cascade_mask_rcnn_dconv_c3-c5_r50_fpn_1x.py" does not exist
+    raise FileNotFoundError(msg_tmpl.format(filename))
+FileNotFoundError: file "/data/sdv1/datasets/xs_bbox/bbox_train/cascade_mask_rcnn_dconv_c3-c5_r50_fpn_1x.py" does not exist
+Traceback (most recent call last):
+  File "/home/shuzhilian/mmdet_v_1/tools/train.py", line 108, in <module>
+    main()
+  File "/home/shuzhilian/mmdet_v_1/tools/train.py", line 52, in main
+    cfg = Config.fromfile(args.config)
+  File "/home/shuzhilian/.conda/envs/mmdet_v_1/lib/python3.7/site-packages/mmcv/utils/config.py", line 78, in fromfile
+    check_file_exist(filename)
+  File "/home/shuzhilian/.conda/envs/mmdet_v_1/lib/python3.7/site-packages/mmcv/utils/path.py", line 32, in check_file_exist
+    raise FileNotFoundError(msg_tmpl.format(filename))
+FileNotFoundError: file "/data/sdv1/datasets/xs_bbox/bbox_train/cascade_mask_rcnn_dconv_c3-c5_r50_fpn_1x.py" does not exist
+Traceback (most recent call last):
+  File "/home/shuzhilian/.conda/envs/mmdet_v_1/lib/python3.7/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/home/shuzhilian/.conda/envs/mmdet_v_1/lib/python3.7/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/home/shuzhilian/.conda/envs/mmdet_v_1/lib/python3.7/site-packages/torch/distributed/launch.py", line 246, in <module>
+    main()
+  File "/home/shuzhilian/.conda/envs/mmdet_v_1/lib/python3.7/site-packages/torch/distributed/launch.py", line 242, in main
+    cmd=cmd)
+subprocess.CalledProcessError: Command '['/home/shuzhilian/.conda/envs/mmdet_v_1/bin/python', '-u', '/home/shuzhilian/mmdet_v_1/tools/train.py', '--local_rank=2', 'cascade_mask_rcnn_dconv_c3-c5_r50_fpn_1x.py', '--launcher', 'pytorch', '--validate']' returned non-zero exit status 1.
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
